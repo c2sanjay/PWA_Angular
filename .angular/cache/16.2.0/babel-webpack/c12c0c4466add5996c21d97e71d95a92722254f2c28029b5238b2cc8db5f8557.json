@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { POINT_DIGITS } from './constants';\nimport PathNode from './path-node';\nclass ArcNode extends PathNode {\n  renderData() {\n    return this.srcElement.toPath().toString(POINT_DIGITS);\n  }\n}\nexport default ArcNode;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const KeyCode = {\n  BACKSPACE: 8,\n  DELETE: 46,\n  TAB: 9,\n  ENTER: 13,\n  ESCAPE: 27,\n  ARROW_LEFT: 37,\n  ARROW_UP: 38,\n  ARROW_RIGHT: 39,\n  ARROW_DOWN: 40,\n  SPACE: 32,\n  END: 35,\n  HOME: 36,\n  PAGE_UP: 33,\n  PAGE_DOWN: 34\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

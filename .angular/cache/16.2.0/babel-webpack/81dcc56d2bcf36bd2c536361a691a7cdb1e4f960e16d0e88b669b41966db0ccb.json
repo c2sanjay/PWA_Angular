@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Mask {\n  constructor() {\n    this.symbols = '';\n    this.partMap = [];\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

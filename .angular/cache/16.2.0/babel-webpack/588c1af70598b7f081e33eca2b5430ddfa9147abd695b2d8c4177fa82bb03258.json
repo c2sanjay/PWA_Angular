@@ -1,0 +1,1 @@
+{"ast":null,"code":"const SVG_NS = \"http://www.w3.org/2000/svg\";\nconst NONE = \"none\";\nconst POINT_DIGITS = 3;\nexport { SVG_NS, NONE, POINT_DIGITS };","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

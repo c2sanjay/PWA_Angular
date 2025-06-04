@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { drawing } from '@progress/kendo-drawing';\nconst {\n  elementOffset,\n  limitValue\n} = drawing.util;\nexport { elementOffset, limitValue };","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

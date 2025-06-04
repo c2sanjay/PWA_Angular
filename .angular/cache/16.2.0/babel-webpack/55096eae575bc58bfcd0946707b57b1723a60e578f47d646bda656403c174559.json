@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { POINT_DIGITS } from './constants';\nimport PathNode from './path-node';\nclass MultiPathNode extends PathNode {\n  renderData() {\n    return this.srcElement.toString(POINT_DIGITS) || 'undefined';\n  }\n}\nexport default MultiPathNode;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
