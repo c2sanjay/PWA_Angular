@@ -25,4 +25,25 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/your-angular-app
+          publish_dir: ./dist/pwa-angular
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: build-deploy
+    if: always()   # run whether success or fail
+    steps:
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: GitHub Actions - PWA_Angular (${{ job.status }})
+          to: your-email@example.com
+          from: GitHub Actions <your-email@example.com>
+          body: |
+            Workflow run result: ${{ job.status }}
+            Repo: ${{ github.repository }}
+            Commit: ${{ github.sha }}
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
